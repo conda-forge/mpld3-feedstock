@@ -6,8 +6,8 @@ package:
 
 source:
   fn: mpld3-{{ version }}.tar.gz
-  url: https://github.com/mpld3/mpld3/archive/v{{ version }}.tar.gz
-  sha256: 4c7e875548ef57a01e04fd6ef4405f08ecde47521fbc6692fcf4900e91c2c0b8
+  url: https://pypi.io/packages/source/m/mpld3/mpld3-{{ version }}.tar.gz
+  sha256: 6388fec56a683991b8f4b7ddb8b7c8c06cddb25491a0b503eef9a028ac16fa78
 
 build:
   number: 0
