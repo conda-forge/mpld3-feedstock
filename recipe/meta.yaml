@@ -1,4 +1,4 @@
-{% set version = "0.2" %}
+{% set version = "0.3" %}
 
 package:
   name: mpld3
@@ -6,8 +6,8 @@ package:
 
 source:
   fn: mpld3-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/m/mpld3/mpld3-{{ version }}.tar.gz
-  sha256: 6388fec56a683991b8f4b7ddb8b7c8c06cddb25491a0b503eef9a028ac16fa78
+  url: https://github.com/mpld3/mpld3/archive/v{{ version }}.tar.gz
+  sha256: a9754aa158d737908f30695fcc261184af16ccfac2339e465117a7d36a3e9784
 
 build:
   number: 0
