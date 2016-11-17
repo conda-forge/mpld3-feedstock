@@ -35,5 +35,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - etgalloway
     - jakevdp
     - ocefpaf
