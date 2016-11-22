@@ -1,4 +1,4 @@
-{% set version = "0.2" %}
+{% set version = "0.3" %}
 
 package:
   name: mpld3
@@ -7,7 +7,7 @@ package:
 source:
   fn: mpld3-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/m/mpld3/mpld3-{{ version }}.tar.gz
-  sha256: 6388fec56a683991b8f4b7ddb8b7c8c06cddb25491a0b503eef9a028ac16fa78
+  sha256: 4d455884a211bf99b37ecc760759435c7bb6a5955de47d8daf4967e301878ab7
 
 build:
   number: 0
@@ -17,12 +17,10 @@ requirements:
   build:
     - python
     - setuptools
-    - mplexporter
   run:
     - python
     - jinja2
     - matplotlib
-    - mplexporter
 
 test:
   imports:
@@ -35,5 +33,6 @@ about:
 
 extra:
   recipe-maintainers:
+    - etgalloway
     - jakevdp
     - ocefpaf
