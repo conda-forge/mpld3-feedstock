@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 2
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
@@ -22,7 +22,7 @@ requirements:
   run:
     - python
     - jinja2
-    - matplotlib
+    - matplotlib-base
 
 test:
   imports:
@@ -30,8 +30,9 @@ test:
 
 about:
   home: http://mpld3.github.com
-  license: BSD 3-Clause
-  summary: 'D3 Viewer for Matplotlib.'
+  license: BSD-3-Clause
+  license_file: LICENSE
+  summary: 'D3 Viewer for Matplotlib'
 
 extra:
   recipe-maintainers:
