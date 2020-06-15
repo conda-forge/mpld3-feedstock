@@ -10,15 +10,14 @@ source:
   sha256: dccc708cc3c997c4478ab9fe4e973a75950683761e99b9e2b89cc96548ac0a57
 
 build:
-  noarch: python
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  noarch: python
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - pip
     - python
-    - setuptools
+    - pip
   run:
     - python
     - jinja2
@@ -27,6 +26,10 @@ requirements:
 test:
   imports:
     - mpld3
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: http://mpld3.github.com
