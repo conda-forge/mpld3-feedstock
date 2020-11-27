@@ -5,11 +5,9 @@ Home: http://mpld3.github.com
 
 Package license: BSD-3-Clause
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/mpld3-feedstock/blob/master/LICENSE.txt)
 
 Summary: D3 Viewer for Matplotlib
-
-
 
 Current build status
 ====================
