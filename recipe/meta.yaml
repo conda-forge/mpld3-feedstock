@@ -1,13 +1,12 @@
-{% set version = "0.5.2" %}
+{% set version = "0.5.5" %}
 
 package:
   name: mpld3
   version: {{ version }}
 
 source:
-  fn: mpld3-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/m/mpld3/mpld3-{{ version }}.tar.gz
-  sha256: 1be25e908eb2abea89169b1c532f0d628dba4fc41d5886a24c96f1a3971310b4
+  sha256: b080f3535238a71024c0158280ab4f6091717c45347c41c907012f8dd6da1bd5
 
 build:
   number: 0
@@ -16,10 +15,10 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
   run:
-    - python
+    - python >=3.6
     - jinja2
     - matplotlib-base
 
