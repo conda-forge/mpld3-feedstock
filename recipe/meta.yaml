@@ -5,20 +5,20 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/m/mpld3/mpld3-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/m/mpld3/mpld3-{{ version }}.tar.gz
   sha256: a478eb404fa5212505c59133cf272cd9a94105872e605597720e7f84de38fbc7
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python >=3.6
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - jinja2
     - matplotlib-base
 
@@ -29,6 +29,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: http://mpld3.github.com
